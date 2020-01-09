@@ -1,0 +1,38 @@
+Ativar virtual env:
+cd\documents\curso\venv\scripts
+activate
+
+criando projeto em Django:
+django-admin startproject 'nome do projeto'
+
+Rodar o projeto Django:
+python manage.py runserver
+
+Parar o servidor 
+ctrl+c
+
+Criar tabelas no banco de dados
+python manage.py migrate
+
+Criar superusuario
+python manage.py createsuperuser
+
+Criar app
+python manage.py startapp 'nome do app'
+
+criar git repositorio
+git init
+
+mostrar historico do repositorio
+git status
+
+fazer um commit
+git add .
+git commit -m "First commit"
+git push origin master
+
+add remote
+git remote add origin endereco
+git remote add origin https://github.com/phaiffer/cursodjango3.git
+
+https://htmlSup.net/strata
