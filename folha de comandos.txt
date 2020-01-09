@@ -35,4 +35,7 @@ add remote
 git remote add origin endereco
 git remote add origin https://github.com/phaiffer/cursodjango3.git
 
+Listar branch
+git branch -v
+
 https://htmlSup.net/strata
