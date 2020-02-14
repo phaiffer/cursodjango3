@@ -5,4 +5,6 @@ class Post(models.Model):
     sub_title = models.CharField(max_length=200)
     content = models.TextField()
 
+    def __str__(self):
+        return self.title
     
