@@ -7,7 +7,7 @@ def hello_blog(request):
           'Banco de Dados', 'Linux', 'Nginx', 'Uwsgi',
          'Systemctl'
     ]
-    list_posts = Post.objects.all()
+    list_posts = Post.objects.filter(deleted=False)
 
     data = {
          'name':'Curso de Django 3', 
