@@ -21,7 +21,7 @@
 					<a href="#" class="image avatar"><img src="{% static 'images/avatar.jpg' %}" alt="" /></a>
 					<h1><strong>Curso de Djando</strong>, simplificando o desenvolvimento<br />
 					Do zero a nuvem<br />
-					criado por <a href="https://www.linkedin.com/in/willian-phaiffer-aa6759102/">Willian Phaiffer Cardoso</a>.</h1>
+					criado por <a href="#">Willian Phaiffer Cardoso</a>.</h1>
 				</div>
 			</header>
 
@@ -35,7 +35,7 @@
 						</header>
 						<p>Estudante no cursos de Sistemas de Informação 7º período, procurando por crescimento profissional, conhecimento básico em Django, preste a iniciar um curso do mesmo em nível avançado, querendo sempre aprimorar o conhecimento obtido. Pouca experiencia na área porem com uma vasta sede de aprender mais.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://www.linkedin.com/in/willian-phaiffer-aa6759102/" class="button">Learn More</a></li>
 						</ul>
 					</section>
 
@@ -48,7 +48,10 @@
 								<a href="{% static 'images/fulls/01.jpg' %}" class="image fit thumb"><img src="{% static 'images/thumbs/01.jpg' %}" alt="" /></a>
 								<h3>{{ post.title }}</h3>
 								<p>{{ post.sub_title }}</p>
-								<span>{{ post.categories }}</span>
+								<span>{{ post.get_category_label }}</span>
+								<ul class="actions">
+									<li><a href="#" class="button">Read more</a></li>
+								</ul>
 							</article>
 							{% endfor %}
 						</div>
