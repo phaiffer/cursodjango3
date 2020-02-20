@@ -50,7 +50,7 @@
 								<p>{{ post.sub_title }}</p>
 								<span>{{ post.get_category_label }}</span>
 								<ul class="actions">
-									<li><a href="#" class="button">Read more</a></li>
+									<li><a href="{% url 'post_detail' post.id %}" class="button">Read more</a></li>
 								</ul>
 							</article>
 							{% endfor %}

@@ -16,3 +16,7 @@ def hello_blog(request):
            }
 
     return render(request, 'index.html', data)
+
+def post_detail(request, id):
+     post = Post.objects.get(id=id)
+     return render(request, 'post_detail.html',{'post': post})
