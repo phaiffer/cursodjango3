@@ -35,6 +35,7 @@
                             <h4>{{ post.sub_title }}</h4>
 						</header>
 						<p>{{ post.content }}</p>
+						<img src="{{ post.imagem.url }}" alt="" width="500px" height="300px">
 						<ul class="actions">
 							<li><a href="{% url 'home_blog' %}" class="button">Back</a></li>
 						</ul>
